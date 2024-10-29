@@ -6,6 +6,7 @@ Link Site:https://leonardob0901.github.io/ProjetoSite/
 <p>Este site tem como objetivo a divulgação do projeto de robótica do instituto, o professor cordenanor do projeto é o Prof. Túlio. Nosso site busca incentivar os alunos a conhecerem melhor o projeto e participarem da montagem dos robôs e das competições de robótica.</p>
 <p>Existem dois tipos robôs</p>
 <p>-Seguidores de Linha: O objetivo deles é seguir as linhas do percurso e terminar o trajeto no menor tempo possível.</p>
+<p>Robôs de Sumo: O objetivo deles é derrubar o seu adversário fora da arena. Dentro dessa modalidade existem diferentes modalidades de acordo com o peso do robô</p>
 
 # Equipe
 
