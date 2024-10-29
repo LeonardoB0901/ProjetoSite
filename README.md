@@ -3,7 +3,10 @@
 Link Site:https://leonardob0901.github.io/ProjetoSite/
 
 <h1>Objetivo do Projeto</h1>
-<p>Este Projeto tem como objetivo a divulgação da ciência, da tecnologia e a inovação por meio da realização e participação de alunos nas competições de robótica promovidas pelo IFPR, as Olimpíadas de Robótica do IFPR. Os alunos inscritos ganharão um KIT de robótica no início do ano e serão avaliados semanalmente, para avaliar o progresso e evolução dos robôs. </p>
+<p>Este site tem como objetivo a divulgação do projeto de robótica do instituto, o professor cordenanor do projeto é o Prof. Túlio. Nosso site busca incentivar os alunos a conhecerem melhor o projeto e participarem da montagem dos robôs e das competições de robótica.
+ Existem dois tipos de robôs
+-Seguidores de linha
+   Esses</p>
 
 # Equipe
 
