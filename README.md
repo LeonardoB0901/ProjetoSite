@@ -12,12 +12,12 @@ Link Site:https://leonardob0901.github.io/ProjetoSite/
 
  <br><p>Leonardo</p>
  <p>Responsável pela programação do site</p>
- <p>Luis</p><br>
+ <br><p>Luis</p>
  <p>Responsável pela programação do site</p>
- <p>Lucas</p>
+ <br><p>Lucas</p>
  <p>Coordenação da equipe e contato com o professor</p
- <p>Isadora</p>
+ <br><p>Isadora</p>
  <p>Responsável pelo design do site</p>
- <p>Isabelly</p>
+ <br><p>Isabelly</p>
  <p>Responsável pelo design do site</p>
 
