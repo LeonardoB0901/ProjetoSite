@@ -17,4 +17,7 @@
  <p>Responsável pelo design do site</p>
  <br><p>Isabelly</p>
  <p>Responsável pelo design do site</p>
+ 
 # Links do projeto
+Link do Site:https://leonardob0901.github.io/ProjetoSite/
+Link do Instagram: https://www.instagram.com/bondebot?igsh=YXg3ZW15ZnU1Zmxj
