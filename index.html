@@ -5,19 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BondeBot</title>
     <style>
+        /* Estilos gerais */
         body {
-            background-image: url('img/fundosite.png');
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('fundosite.png'); /* Imagem de fundo */
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
+
+        /* Barra de navegação */
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.8); /* Fundo translúcido */
+            padding: 10px 20px;
+        }
+
+        /* Logo */
+        .navbar img {
+            width: 100px; /* Ajuste o tamanho do logo conforme necessário */
+            margin-right: 20px;
+        }
+
+        /* Menu de navegação */
+        .nav-links {
+            display: flex;
+            flex-grow: 1;
+            justify-content: space-around;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            font-weight: bold;
+            font-size: 1rem;
+            position: relative;
+        }
+
+        /* Link */
+        .nav-links li a {
+            color: #000; /* Cor do texto */
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        /* Linha abaixo dos links */
+        .nav-links li:after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #000; /* Cor da linha */
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .nav-links li:hover:after {
+            transform: scaleX(1);
+        }
     </style>
 </head>
 <body>
+    <header class="navbar">
+        <!-- Logo -->
+        <img src="img/bondebot.png" alt="Logo BondeBot" title="BondeBot">
 
-    <div>
-        <img src="img/bondebot (1).png" width="250" title="logo bondebot">
-
-    </div>
+        <!-- Links de navegação -->
+        <ul class="nav-links">
+            <li><a href="#modalidades">modalidades</a></li>
+            <li><a href="#contatos">contatos</a></li>
+            <li><a href="#participantes">participantes</a></li>
+            <li><a href="#objetivo">objetivo</a></li>
+        </ul>
+    </header>
 </body>
 </html>
