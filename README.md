@@ -7,6 +7,10 @@ Link Site:https://leonardob0901.github.io/ProjetoSite/
  Leonardo
  <p></p>
  Lucas
+ <p></p>
  Luis
+ <p>
+ </p>
  Isadora
+ <p></p>
  Isabelly
