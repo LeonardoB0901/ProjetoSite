@@ -10,9 +10,9 @@ Link Site:https://leonardob0901.github.io/ProjetoSite/
 
 # Equipe
 
- <p>Leonardo</p>
+ <p>Leonardo</p><br>
  <p>Responsável pela programação do site</p>
- <p>Luis</p>
+ <p>Luis</p><br>
  <p>Responsável pela programação do site</p>
  <p>Lucas</p>
  <p>Coordenação da equipe e contato com o professor</p
