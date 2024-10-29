@@ -4,8 +4,8 @@ Link Site:https://leonardob0901.github.io/ProjetoSite/
 
 #Equipe
 
-$Leonardo
- Lucas
+#Leonardo
+# Lucas
  Luis
  Isadora
  Isabelly
