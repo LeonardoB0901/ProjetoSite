@@ -10,14 +10,14 @@ Link Site:https://leonardob0901.github.io/ProjetoSite/
 
 # Equipe
 
- Leonardo
+ <h1>Leonardo</h1>
  <p>Responsável pela programação do site</p>
- Lucas
- <p></p>
- Luis
- <p>
- </p>
- Isadora
- <p></p>
- Isabelly
- <p></p>
+ <h1>Lucas</h1>
+ <p>Coordenação da equipe e contato com o professor</p
+ <h1>Luis</h1>
+ <p>Responsável pela programação do site</p>
+ <h1>Isadora</h1>
+ <p>Responsável pelo design do site</p>
+ <h1>Isabelly</h1>
+ <p>Responsável pelo design do site</p>
+
