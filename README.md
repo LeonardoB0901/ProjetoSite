@@ -1,7 +1,7 @@
 # Links do projeto
-Link do Site: https://leonardob0901.github.io/ProjetoSite/
-<br>
-Link do Instagram: https://www.instagram.com/bondebot?igsh=YXg3ZW15ZnU1Zmxj
+Link do Site: https://leonardob0901.github.io/ProjetoSite/<br>
+Link do Protótipo no Canva:https://www.canva.com/design/DAGUUR1v1N0/f0zWxtaMZRRYGi6gPFmZsw/edit<br>
+Link do Instagram: https://www.instagram.com/bondebot?igsh=YXg3ZW15ZnU1Zmxj<br>
 
 <h1>Objetivo do Projeto</h1>
 <p>Este site tem como objetivo a divulgação do projeto de robótica do instituto, o professor cordenanor do projeto é o Prof. Túlio. Nosso site busca incentivar os alunos a conhecerem melhor o projeto e participarem da montagem dos robôs e das competições de robótica.</p>
