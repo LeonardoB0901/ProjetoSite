@@ -16,7 +16,7 @@ Link do Instagram: https://www.instagram.com/bondebot?igsh=YXg3ZW15ZnU1Zmxj
  <br><p>Luis</p>
  <p>Responsável pela programação do site</p>
  <br><p>Lucas</p>
- <p>Coordenação da equipe e contato com o professor</p
+ <p>Coordenação da equipe e contato com o professor</p>
  <br><p>Isadora</p>
  <p>Responsável pelo design do site</p>
  <br><p>Isabelly</p>
