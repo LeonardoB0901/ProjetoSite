@@ -4,6 +4,11 @@ header, footer {
     background-color: rgb(60, 92, 13);
 }
 
+header {
+    box-shadow: 0px 3px 10px #e4e2e2;
+}
+
+
 .nav-bar {
     display: flex;
     justify-content: space-between;
