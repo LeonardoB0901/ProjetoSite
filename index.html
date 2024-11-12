@@ -3,11 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bondebot</title>
+    <style>
+        header {
+            text-align: center;
+            padding: 10px 0; /* Reduz o espaço vertical */
+            background-color: lightgreen;
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 150px; /* Reduz a largura da imagem */
+        }
+
+        .nav-list ul {
+            display: flex;
+            gap: 15px; /* Ajusta o espaçamento entre os itens de navegação */
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .nav-item a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1><img src="img/bondebot (1).png" alt="Bondebot"></h1>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1><img src="img/bondebot (1).png" alt="150" width="150" style="max-width: 100%;"></h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Participantes</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Modalidades</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Objetivos</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 </body>
 </html>
