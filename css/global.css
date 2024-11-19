@@ -57,4 +57,5 @@ header {
     padding: 20px; /* Espaçamento interno */
     max-width: 300px; /* Limita a largura máxima do elemento */
     margin: 20px auto; /* Centraliza o elemento na página */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
