@@ -1,7 +1,7 @@
 header, footer {
     text-align: center;
     padding: 10px 0; /* Reduz o espaço vertical */
-    background-color: rgb(60, 92, 13);
+    background-color:#c2d4cf
 }
 
 header {
@@ -48,4 +48,12 @@ header {
     text-decoration: none;
     color: black;
     font-size: 16px;
+}
+
+h1 {
+    border: 2px solid #000; /* Define a borda com 2px de espessura e cor preta */
+    padding: 10px; /* Espaçamento interno entre o título e a borda */
+    text-align: center; /* Centraliza o texto */
+    margin: 20px; /* Espaçamento externo ao redor do título */
+    font-family: Arial, sans-serif; /* Define a fonte */
 }
