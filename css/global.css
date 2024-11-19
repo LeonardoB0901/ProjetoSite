@@ -53,7 +53,7 @@ header {
 .objetivo {
     background-color: white; /* Fundo branco */
     padding: 10px; /* Espaçamento interno */
-    max-width: 700px; /* Aumenta a largura máxima do elemento */
+    max-width: 500px; /* Aumenta a largura máxima do elemento */
     width: 100%; /* Faz com que o elemento ocupe 100% da largura disponível (mas sem ultrapassar max-width) */
     margin: 20px auto; /* Centraliza o elemento na página */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
