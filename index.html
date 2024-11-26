@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bondebot</title>
     <style>
+        body {
+            background-color: #f0f0f0; /* Definindo cor de fundo para o corpo do site */
+            font-family: Arial, sans-serif; /* Definindo uma fonte geral */
+        }
+
         header, footer {
             text-align: center;
-            padding: 10px 0; /* Reduz o espaço vertical */
-            background-color: #c2d4cf;
+            padding: 10px 0;
+            background-color: #c2d4cf; /* Cor de fundo do header e footer */
+        }
 
         .nav-bar {
             display: flex;
@@ -17,12 +23,12 @@
         }
 
         .logo img {
-            width: 150px; /* Reduz a largura da imagem */
+            width: 150px;
         }
 
         .nav-list ul {
             display: flex;
-            gap: 15px; /* Ajusta o espaçamento entre os itens de navegação */
+            gap: 15px;
             margin: 0;
             padding: 0;
             list-style: none;
@@ -33,18 +39,28 @@
             color: black;
             font-size: 16px;
         }
+
         .objetivo {
-            background-color: white; /* Fundo branco */
-            padding: 10px; /* Espaçamento interno */
-            max-width: 500px; /* Aumenta a largura máxima do elemento */
-            width: 100%; /* Faz com que o elemento ocupe 100% da largura disponível (mas sem ultrapassar max-width) */
-            margin: 20px auto; /* Centraliza o elemento na página */
+            background-color: white;
+            padding: 10px;
+            max-width: 500px;
+            width: 100%;
+            margin: 20px auto;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15); /* Sombra */
-            border-radius: 50px; /* Borda arredondada */
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+            border-radius: 50px;
         }
+
+        /* Cor do texto com a classe .principal */
         .principal {
-            color: #177b2e;
+            color: #177b2e; /* Verde para o texto */
+        }
+
+        article {
+            background-color: #f0f0f0; /* Cor de fundo igual ao resto do site */
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 900px;
         }
     </style>
 </head>
@@ -63,20 +79,19 @@
             </div>
         </nav>
     </header>
+    
     <hr>
+
     <footer>
         <nav class="nav-bar">
             <h1 class="objetivo">OBJETIVOS</h1>
         </nav>
     </footer>
-    
+
     <article>
-        <p class="principal">OBJETIVOS DO CURSO:
-        </p class="principal">
-        <p>Este Projeto tem como objetivo a divulgação da ciência, da tecnologia e a inovação por meio da realização e participação de alunos nas competições de robótica promovidas pelo IFPR, as Olimpíadas de Robótica do IFPR. Os alunos inscritos ganharão um KIT de robótica no início do ano e serão avaliados semanalmente, para avaliar o progresso e evolução dos robôs.
-        </p>
+        <p class="principal">OBJETIVOS DO CURSO:</p>
+        <p>Este Projeto tem como objetivo a divulgação da ciência, da tecnologia e a inovação por meio da realização e participação de alunos nas competições de robótica promovidas pelo IFPR, as Olimpíadas de Robótica do IFPR. Os alunos inscritos ganharão um KIT de robótica no início do ano e serão avaliados semanalmente, para avaliar o progresso e evolução dos robôs.</p>
     </article>
-    
-    
+
 </body>
 </html>
