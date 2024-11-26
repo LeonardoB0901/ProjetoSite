@@ -5,75 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bondebot</title>
     <style>
-        body {
-            background-color: #c2d4cf; /* Cor de fundo para o corpo do site */
-            font-family: Arial, sans-serif;
-            margin: 0; /* Remover margens padrão do body */
-            padding: 0; /* Remover padding padrão do body */
-        }
 
-        header, footer {
-            text-align: center;
-            padding: 10px 0;
-            background-color: #c2d4cf;
-            width: 100%; /* Garantir que o header e o footer cubram 100% da largura */
-        }
+       body {
+    background-color: #c2d4cf; /* Cor de fundo para o corpo do site */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-        .nav-bar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+header, footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #c2d4cf;
+    width: 100%;
+}
 
-        .logo img {
-            width: 150px;
-        }
+.nav-bar {
+    display: flex;
+    justify-content: space-between; /* Distribui o logo e o menu */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
 
-        .nav-list ul {
-            display: flex;
-            gap: 15px;
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
+.logo img {
+    width: 150px;
+}
 
-        .nav-item a {
-            text-decoration: none;
-            color: black;
-            font-size: 16px;
-        }
+.nav-list {
+    flex: 1; /* Faz o nav-list ocupar o espaço restante */
+    display: flex;
+    justify-content: center; /* Centraliza os itens dentro do contêiner */
+}
 
-        .objetivo {
-            background-color: white;
-            padding: 10px;
-            max-width: 500px;
-            width: 100%;
-            margin: 20px auto;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
-            border-radius: 50px;
-        }
+.nav-list ul {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
-        /* Cor do texto com a classe .principal */
-        .principal {
-            color: #177b2e;
-            font-size: larger;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        }
+.nav-item a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
 
-        article {
-            background-color: #c2d4cf; /* Cor de fundo igual ao resto do site */
-            padding: 20px;
-            width: 100%; /* Ocupa toda a largura disponível */
-            margin: 0; /* Remove qualquer margem */
-        }
+.objetivo {
+    background-color: white;
+    padding: 10px;
+    max-width: 500px;
+    width: 100%;
+    margin: 20px auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 50px;
+}
 
-        footer {
-            background-color: #c2d4cf; /* Cor de fundo igual ao resto do site */
-            padding: 10px 0;
-            text-align: center;
-            width: 100%;
-        }
+.principal {
+    color: #177b2e;
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+article {
+    background-color: #c2d4cf;
+    padding: 20px;
+    width: 100%;
+    margin: 0;
+}
+
+footer {
+    background-color: #c2d4cf;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
 
     </style>
 </head>
