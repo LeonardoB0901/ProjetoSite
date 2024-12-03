@@ -5,38 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bondebot</title>
     <style>
+        body {
+            background-color: #c2d4cf; /* Cor de fundo para o corpo do site */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-       body {
-    background-color: #c2d4cf; /* Cor de fundo para o corpo do site */
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+        header, footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #c2d4cf;
+            width: 100%;
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: space-between; /* Distribui o logo e o menu */
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto; /* Centraliza o conteúdo */
+        }
+
+        .logo img {
+        width: 150px;
+        }
+
+        .nav-list {
+        flex: 1; /* Faz o nav-list ocupar o espaço restante */
+        display: flex;
+        justify-content: center; /* Centraliza os itens dentro do contêiner */
+        }
+
+        .nav-list ul {
+            display: flex;
+            justify-content: center; /* Centraliza os itens horizontalmente */
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .nav-item a {
+text-decoration: none;
+color: black;
+font-size: 16px;
 }
 
-header, footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #c2d4cf;
-    width: 100%;
-}
+        .objetivo {
+            background-color: white;
+            padding: 10px;
+            max-width: 500px;
+            width: 100%;
+            margin: 20px auto;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+            border-radius: 50px;
+        }
 
-.nav-bar {
-    display: flex;
-    justify-content: space-between; /* Distribui o logo e o menu */
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto; /* Centraliza o conteúdo */
-}
+        .principal {
+            color: #177b2e;
+            font-size: larger;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
 
 .logo img {
     width: 150px;
     
 }
 
-.nav-list {
-    flex: 1; /* Faz o nav-list ocupar o espaço restante */
-    display: flex;
-    justify-content: center; /* Centraliza os itens dentro do contêiner */
+        footer {
+        background-color: #c2d4cf;
+        padding: 10px 0;
+        text-align: center;
+            width: 100%;
 }
 
 .nav-list ul {
