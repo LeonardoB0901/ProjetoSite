@@ -1,62 +1,77 @@
+body {
+background-color: #c2d4cf; /* Cor de fundo para o corpo do site */
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+
 header, footer {
-    text-align: center;
-    padding: 10px 0; /* Reduz o espaço vertical */
-    background-color:#c2d4cf
+text-align: center;
+padding: 10px 0;
+background-color: #c2d4cf;
+width: 100%;
 }
-
-header {
-    box-shadow: 0px 3px 10px #e4e2e2;
-}
-
 
 .nav-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+display: flex;
+justify-content: space-between; /* Distribui o logo e o menu */
+align-items: center;
+max-width: 1200px;
+margin: 0 auto; /* Centraliza o conteúdo */
 }
 
 .logo img {
-    display: flex;
-    align-items: center;
+width: 150px;
 }
 
 .nav-list {
-    display: flex;
-    align-items: center;
+flex: 1; /* Faz o nav-list ocupar o espaço restante */
+display: flex;
+justify-content: center; /* Centraliza os itens dentro do contêiner */
 }
 
 .nav-list ul {
-    display: flex;
-    gap: 15px; /* Ajusta o espaçamento entre os itens de navegação */
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.nav-item {
-    margin: 0 15px;
-}
-
-.nav-link {
-    text-decoration: none;
-    font-size: 1.15rem;
-    color: #040404ee;
-    font-weight: 400;
+display: flex;
+justify-content: center; /* Centraliza os itens horizontalmente */
+gap: 15px;
+margin: 0;
+padding: 0;
+list-style: none;
 }
 
 .nav-item a {
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
+text-decoration: none;
+color: black;
+font-size: 16px;
 }
 
 .objetivo {
-    background-color: white; /* Fundo branco */
-    padding: 10px; /* Espaçamento interno */
-    max-width: 500px; /* Aumenta a largura máxima do elemento */
-    width: 100%; /* Faz com que o elemento ocupe 100% da largura disponível (mas sem ultrapassar max-width) */
-    margin: 20px auto; /* Centraliza o elemento na página */
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15); /* Sombra */
-    border-radius: 50px; /* Borda arredondada */
+background-color: white;
+padding: 10px;
+max-width: 500px;
+width: 100%;
+margin: 20px auto;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+border-radius: 50px;
+}
+
+.principal {
+color: #177b2e;
+font-size: larger;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+article {
+background-color: #c2d4cf;
+padding: 20px;
+width: 100%;
+margin: 0;
+}
+
+footer {
+background-color: #c2d4cf;
+padding: 10px 0;
+text-align: center;
+width: 100%;
 }
