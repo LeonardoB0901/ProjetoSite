@@ -6,7 +6,7 @@
     <title>Bondebot</title>
     <style>
         body {
-            background-color: #c2d4cf; /* Cor de fundo para o corpo do site */
+            background-color: #c2d4cf;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -23,22 +23,22 @@
             display: flex;
             justify-content: space-between; /* Logo à esquerda e menu à direita */
             align-items: center;
-            width: 100%; /* A largura é 100% para ocupar toda a tela */
-            padding: 0 20px; /* Espaçamento para não ficar colado nas extremidades */
+            padding: 0 20px; /* Espaçamento nas laterais para não ficar colado */
+            width: 100%; /* Certifica-se que ocupa toda a largura disponível */
         }
 
         .logo {
-            flex: 0; /* Garante que a logo não ocupe mais espaço do que o necessário */
+            flex: 0; /* Garante que a logo ocupe apenas o espaço necessário */
         }
 
         .logo img {
-            width: 150px;
-            max-width: 100%; /* Garantir que o logo não ultrapasse a largura */
+            width: 150px; /* Largura do logo */
+            height: auto; /* Mantém a proporção da imagem */
         }
 
         .nav-list {
             display: flex;
-            justify-content: flex-end; /* Alinha os itens do menu à direita */
+            justify-content: flex-end; /* Menu alinhado à direita */
         }
 
         .nav-list ul {
@@ -49,13 +49,11 @@
             list-style: none;
         }
 
-
-
         .nav-item a {
             text-decoration: none;
             color: black;
             font-size: 16px;
-        }
+        }       
 
         .objetivo {
             background-color: white;
