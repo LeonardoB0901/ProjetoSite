@@ -21,36 +21,41 @@
 
         .nav-bar {
             display: flex;
-            justify-content: space-between; /* Distribui o logo e o menu */
+            justify-content: space-between; /* Logo à esquerda e menu à direita */
             align-items: center;
-            max-width: 1200px;
-            margin: 0 auto; /* Centraliza o conteúdo */
+            width: 100%; /* A largura é 100% para ocupar toda a tela */
+            padding: 0 20px; /* Espaçamento para não ficar colado nas extremidades */
+        }
+
+        .logo {
+            flex: 0; /* Garante que a logo não ocupe mais espaço do que o necessário */
         }
 
         .logo img {
-        width: 150px;
+            width: 150px;
+            max-width: 100%; /* Garantir que o logo não ultrapasse a largura */
         }
 
         .nav-list {
-        flex: 1; /* Faz o nav-list ocupar o espaço restante */
-        display: flex;
-        justify-content: center; /* Centraliza os itens dentro do contêiner */
+            display: flex;
+            justify-content: flex-end; /* Alinha os itens do menu à direita */
         }
 
         .nav-list ul {
             display: flex;
-            justify-content: center; /* Centraliza os itens horizontalmente */
             gap: 15px;
             margin: 0;
             padding: 0;
             list-style: none;
         }
 
+
+
         .nav-item a {
-text-decoration: none;
-color: black;
-font-size: 16px;
-}
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
 
         .objetivo {
             background-color: white;
