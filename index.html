@@ -126,33 +126,26 @@ footer {
     text-align: center;
     width: 100%;
 }
-
-.image-container {
-            position: relative; /* Necessário para o posicionamento absoluto do texto */
-            display: inline-block; /* Garante que o container tenha o tamanho da imagem */
+.image-text-container {
+            display: flex; /* Usa flexbox para colocar a imagem e o texto lado a lado */
+            align-items: center; /* Alinha a imagem e o texto verticalmente */
+            justify-content: center; /* Centraliza o conteúdo (opcional) */
+            cursor: pointer; /* Adiciona um cursor de clique ao passar o mouse */
         }
 
         /* Estilo da imagem */
-        .image-container img {
-            width: 100%; /* A imagem ocupa 100% do tamanho do container */
-            height: auto; /* A altura é ajustada para manter a proporção */
+        .image-text-container img {
+            width: 150px; /* Defina o tamanho da imagem conforme necessário */
+            height: auto; /* A altura é ajustada automaticamente para manter a proporção */
+            margin-right: 20px; /* Espaçamento entre a imagem e o texto */
         }
 
-        /* Estilo do texto sobre a imagem */
-        .image-container .text {
-            position: absolute; /* Posiciona o texto sobre a imagem */
-            top: 50%; /* Centraliza verticalmente */
-            left: 50%; /* Centraliza horizontalmente */
-            transform: translate(-50%, -50%); /* Ajusta o texto para que ele fique perfeitamente centralizado */
-            color: white; /* Cor do texto */
-            font-size: 24px; /* Tamanho do texto */
-            font-weight: bold; /* Torna o texto em negrito */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra no texto para melhorar a legibilidade */
-        }
-
-        /* Estilo da tag <a> */
-        a {
-            display: block; /* Faz com que a tag <a> ocupe o espaço inteiro */
+        /* Estilo do texto */
+        .image-text-container .text {
+            font-size: 20px;
+            color: #333; /* Cor do texto */
+            font-weight: bold; /* Tornar o texto em negrito */
+            text-align: left; /* Alinha o texto à esquerda */
         }
 
     </style>
