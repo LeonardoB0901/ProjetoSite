@@ -5,42 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bondebot</title>
     <style>
-        header, footer {
-            text-align: center;
-            padding: 10px 0; /* Reduz o espaço vertical */
-            background-color: #c2d4cf;
 
-        .nav-bar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+       body {
+    background-color: #c2d4cf; /* Cor de fundo para o corpo do site */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-        .logo img {
-            width: 150px; /* Reduz a largura da imagem */
-        }
+header, footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #c2d4cf;
+    width: 100%;
+}
 
-        .nav-list ul {
-            display: flex;
-            gap: 15px; /* Ajusta o espaçamento entre os itens de navegação */
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
+.nav-bar {
+    display: flex;
+    justify-content: space-between; /* Distribui o logo e o menu */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
 
-        .nav-item a {
-            text-decoration: none;
-            color: black;
-            font-size: 16px;
-        }
-        
-        h1 {
-            border: 2px solid #000; /* Define a borda com 2px de espessura e cor preta */
-            padding: 10px; /* Espaçamento interno entre o título e a borda */
-            text-align: center; /* Centraliza o texto */
-            margin: 20px; /* Espaçamento externo ao redor do título */
-            font-family: Arial, sans-serif; /* Define a fonte */
-        }
+.logo img {
+    width: 150px;
+}
+
+.nav-list {
+    flex: 1; /* Faz o nav-list ocupar o espaço restante */
+    display: flex;
+    justify-content: center; /* Centraliza os itens dentro do contêiner */
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.objetivo {
+    background-color: white;
+    padding: 10px;
+    max-width: 500px;
+    width: 100%;
+    margin: 20px auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 50px;
+}
+
+.principal {
+    color: #177b2e;
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+article {
+    background-color: #c2d4cf;
+    padding: 20px;
+    width: 100%;
+    margin: 0;
+}
+
+footer {
+    background-color: #c2d4cf;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
     </style>
 </head>
 <body>
@@ -58,11 +101,55 @@
             </div>
         </nav>
     </header>
+    
     <hr>
-    <footer>
+    <article>
+        <footer>
         <nav class="nav-bar">
-            <h1>OBJETIVOS</h1>
+            <h1 class="objetivo">OBJETIVOS</h1>
         </nav>
-    </footer>
+        </footer>
+
+            <p class="principal">OBJETIVOS DO CURSO:</p>
+            <p>Este Projeto tem como objetivo a divulgação da ciência, da tecnologia e a inovação por meio da realização e participação de alunos nas competições de <br> robótica promovidas pelo IFPR, as Olimpíadas de Robótica do IFPR. Os alunos inscritos ganharão um KIT de robótica no início do ano e serão avaliados semanalmente, para avaliar o progresso e evolução dos robôs.</p>
+            <br>
+            <br>
+            <br>
+            <p class="principal">CONDIÇÕES DO CURSO:</p>
+            <p>Durante o projeto, os alunos que participantes deverão se apresentar semanalmente para os coordenadores do curso, para avaliarem o andamento dos robôs. Alunos que não apresentarem pouca/nenhuma <br> evolução serão desligados do curso e os Kits terão que ser devolvidos. Participe somente se tiver certeza que irá sacrificar tempo e paciência na confecção dos robôs.</p>
+    
+
+    <!-- Segundo footer, com mesma estilização -->
+        <footer>
+            <nav class="nav-bar">
+                <h1 class="objetivo">MODALIDADES</h1>
+            </nav>
+        </footer>
+        <p class="principal">SUMÔ:</p>
+        <p>As competições de robôs no estilo sumô unem tecnologia e estratégia, com regras que garantem um equilíbrio justo entre os competidores. Os robôs são divididos em duas categorias de peso: Mini Sumô <br> (até 500 g) e Sumô (até 1 kg), assegurando que os robôs mais leves ou mais pesados não tenham vantagens.
+            Os robôs são autônomos e programados previamente, competindo sem intervenção humana. <br> Isso significa que eles devem se mover e reagir sozinhos, baseando-se na programação feita pelos competidores, tornando a inteligência artificial e a lógica de programação essenciais para a vitória.
+            Cada partida ocorre entre dois robôs, e o formato é "melhor de três", onde o primeiro robô a vencer dois rounds se torna o campeão da partida. Cada round dura até três minutos, exigindo que os robôs sejam rápidos e eficientes.
+        </p>
+        <p class="principal">SEGUIDOR DE LINHA:</p>
+        <p>O robô seguidor de linha é um tipo de robô autônomo que segue uma trajetória específica, normalmente marcada por uma linha de cor contrastante, como uma faixa preta em um fundo branco. Esse robô utiliza <br> sensores, geralmente infravermelhos ou fotossensores, para detectar a linha e reconhecer desvios na trajetória, ajustando sua direção conforme necessário.  A programação é essencial para o funcionamento,<br> permitindo que o robô ajuste a velocidade e contorne curvas de forma eficiente.</p>
+        <footer>
+        <nav class="nav-bar">
+            <h1 class="objetivo">PARTICIPANTES</h1>
+        </nav>
+        </footer>
+        <p class="principal">COORDENADOR:</p>
+        <p>. Prof. Túlio: Professor e Coordenador do Projeto BondeBot e Automatiza, responsável por auxiliar os alunos no Pavilhão (Região para as aulas de automação e mecânica), onde coordena na confecção e programação dos robôs. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="principal">INTEGRANTES DO PROJETO:</p>
+        <p>adnajfdakfkafjpqnfqkfiqkfqlnfqlfqkfqpkfqkkfqonfqofkkqmfpqmf</p>
+
+        <footer>
+            <nav class="final">
+                <img src="img/instalogo (2).png" alt="50" width="50" style="max-width: 100%;">
+                <img src="img/linktrree (1).png" alt="50" width="50" style="max-width: 100%;">
+                <img src="img/gmaillogo (1).png" alt="50"    width="50"  style="max-width: 100%;">
+            </nav>
+        </footer>
+    </article>
 </body>
 </html>

@@ -50,10 +50,13 @@ header {
     font-size: 16px;
 }
 
-h1 {
-    border: 2px solid #000; /* Define a borda com 2px de espessura e cor preta */
-    padding: 10px; /* Espaçamento interno entre o título e a borda */
-    text-align: center; /* Centraliza o texto */
-    margin: 20px; /* Espaçamento externo ao redor do título */
-    font-family: Arial, sans-serif; /* Define a fonte */
+.objetivo {
+    background-color: white; /* Fundo branco */
+    padding: 10px; /* Espaçamento interno */
+    max-width: 500px; /* Aumenta a largura máxima do elemento */
+    width: 100%; /* Faz com que o elemento ocupe 100% da largura disponível (mas sem ultrapassar max-width) */
+    margin: 20px auto; /* Centraliza o elemento na página */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15); /* Sombra */
+    border-radius: 50px; /* Borda arredondada */
 }
