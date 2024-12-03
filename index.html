@@ -127,18 +127,33 @@ footer {
     width: 100%;
 }
 
-.final {
-    display: flex;
-    justify-content: center; 
-    gap: 20px; 
-    padding: 20px 0; 
-}
+.image-container {
+            position: relative; /* Necessário para o posicionamento absoluto do texto */
+            display: inline-block; /* Garante que o container tenha o tamanho da imagem */
+        }
 
-.final img {
-    width: 50px; 
-    height: auto; 
-    max-width: 100%; 
-}
+        /* Estilo da imagem */
+        .image-container img {
+            width: 100%; /* A imagem ocupa 100% do tamanho do container */
+            height: auto; /* A altura é ajustada para manter a proporção */
+        }
+
+        /* Estilo do texto sobre a imagem */
+        .image-container .text {
+            position: absolute; /* Posiciona o texto sobre a imagem */
+            top: 50%; /* Centraliza verticalmente */
+            left: 50%; /* Centraliza horizontalmente */
+            transform: translate(-50%, -50%); /* Ajusta o texto para que ele fique perfeitamente centralizado */
+            color: white; /* Cor do texto */
+            font-size: 24px; /* Tamanho do texto */
+            font-weight: bold; /* Torna o texto em negrito */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra no texto para melhorar a legibilidade */
+        }
+
+        /* Estilo da tag <a> */
+        a {
+            display: block; /* Faz com que a tag <a> ocupe o espaço inteiro */
+        }
 
     </style>
 </head>
@@ -199,13 +214,12 @@ footer {
         <p class="principal">INTEGRANTES DO PROJETO:</p>
         <p>adnajfdakfkafjpqnfqkfiqkfqlnfqlfqkfqpkfqkkfqonfqofkkqmfpqmf</p>
 
-        <div>
-            <nav class="final">
-                <img src="img/instalogo (2).png" alt="50" width="50" style="max-width: 100%;">
-                <img src="img/linktrree (1).png" alt="100" width="100" style="max-width: 100%;">
-                <img src="img/gmaillogo (1).png" alt="60" width="70"  style="max-width: 100%;">
-            </nav>
-        </div>
+        <a href="instagram.com" target="instagram.com">
+            <div class="image-container">
+                <img src="img/instalogo (2).png" alt="InstagramLogo">
+                <div class="text">Instagram</div>
+            </div>
+        </a>
     </article>
 </body>
 </html>
