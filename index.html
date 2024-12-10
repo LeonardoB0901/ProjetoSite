@@ -119,9 +119,8 @@
         p {
             color: rgb(255, 255, 255);
         }
-
-        /* Estilo do contêiner do carrossel */
-        .video-carrossel {
+  /* Estilo do contêiner do carrossel */
+  .video-carrossel {
             width: 80%;
             max-width: 800px;
             margin: 20px auto;
@@ -163,21 +162,6 @@
             font-size: 18px;
             cursor: pointer;
         }
-
-        /* Escondendo os inputs de rádio */
-        input[type="radio"] {
-            display: none;
-        }
-
-        /* Ações baseadas nos inputs de rádio */
-        #prev:checked ~ .video-carrossel .video-container {
-            transform: translateX(0); /* Primeiro vídeo */
-        }
-
-        #next:checked ~ .video-carrossel .video-container {
-            transform: translateX(-50%); /* Segundo vídeo */
-        }
-
 
     </style>
 </head>
@@ -233,14 +217,39 @@
         
                 <!-- Controles de navegação -->
                 <div class="controls">
-                    <label class="prev" for="prev">&#10094;</label>
-                    <label class="next" for="next">&#10095;</label>
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
                 </div>
-        
-                <!-- Inputs invisíveis para controlar o carrossel -->
-                <input type="radio" id="prev" name="video-control">
-                <input type="radio" id="next" name="video-control">
             </div>
+        
+            <script>
+                // Seleciona o contêiner de vídeos e os botões
+                const videoContainer = document.querySelector('.video-container');
+                const prevButton = document.querySelector('.prev');
+                const nextButton = document.querySelector('.next');
+        
+                // Variável para controlar a posição atual do carrossel
+                let currentIndex = 0;
+                const totalVideos = videoContainer.children.length;
+        
+                // Função para atualizar a posição do carrossel
+                function updateCarousel() {
+                    const offset = -currentIndex * 50; // Cada vídeo tem 50% da largura
+                    videoContainer.style.transform = `translateX(${offset}%)`;
+                }
+        
+                // Função para navegar para o vídeo anterior
+                prevButton.addEventListener('click', () => {
+                    currentIndex = (currentIndex === 0) ? totalVideos - 1 : currentIndex - 1;
+                    updateCarousel();
+                });
+        
+                // Função para navegar para o próximo vídeo
+                nextButton.addEventListener('click', () => {
+                    currentIndex = (currentIndex === totalVideos - 1) ? 0 : currentIndex + 1;
+                    updateCarousel();
+                });
+            </script>
         </footer>
         <p class="principal">SUMÔ:</p>
         <p>As competições de robôs no estilo sumô unem tecnologia e estratégia, com regras que garantem um equilíbrio justo entre os competidores. Os robôs são divididos em duas categorias de peso: Mini Sumô <br> (até 500 g) e Sumô (até 1 kg), assegurando que os robôs mais leves ou mais pesados não tenham vantagens.
