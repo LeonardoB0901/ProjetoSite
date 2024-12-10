@@ -120,63 +120,59 @@
             color: rgb(255, 255, 255);
         }
 
-          /* Contêiner principal do carrossel */
-          .video-carrossel {
-            width: 80%; /* Largura do carrossel */
-            max-width: 800px; /* Largura máxima */
-            margin: 20px auto; /* Centraliza o carrossel */
-            overflow: hidden; /* Esconde os vídeos fora da área visível */
-            position: relative;
-        }
+    /* Estilo da navegação do carrossel */
+    .video-carrossel {
+        width: 80%;
+        max-width: 800px;
+        margin: 20px auto;
+        overflow: hidden;
+        position: relative;
+    }
 
-        /* Contêiner dos vídeos dentro do carrossel */
-        .video-container {
-            display: flex; /* Usa flexbox para alinhar os vídeos horizontalmente */
-            transition: transform 0.5s ease-in-out; /* Transição suave ao deslizar */
-        }
+    .video-container {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        width: 200%; /* Contêiner maior para comportar os dois vídeos */
+    }
 
-        /* Cada vídeo dentro do carrossel */
-        .video-container video {
-            width: 100%; /* Faz o vídeo ocupar toda a largura do carrossel */
-            flex-shrink: 0; /* Impede que os vídeos encolham */
-            border-radius: 10px; /* Bordas arredondadas nos vídeos */
-        }
+    .video-container video {
+        width: 50%; /* Cada vídeo ocupa metade da largura */
+        flex-shrink: 0;
+        border-radius: 10px;
+    }
 
-        /* Caixa de input (controle do carrossel) */
-        .controls {
-            position: absolute;
-            top: 50%;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            transform: translateY(-50%);
-            z-index: 10;
-        }
+    /* Estilos para os botões de navegação */
+    .controls {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+        z-index: 10;
+    }
 
-        /* Botões de navegação */
-        .prev, .next {
-            background-color: rgba(0, 0, 0, 0.5);
-            color: #fff;
-            border: none;
-            padding: 10px;
-            font-size: 18px;
-            cursor: pointer;
-            z-index: 10;
-        }
+    .prev, .next {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        border: none;
+        padding: 10px;
+        font-size: 18px;
+        cursor: pointer;
+    }
 
-        /* Esconde os inputs do carrossel */
-        input[type="radio"] {
-            display: none;
-        }
+    input[type="radio"] {
+        display: none;
+    }
 
-        /* Estilos dos botões de navegação (com base no estado do radio) */
-        #prev:checked ~ .video-carrossel .video-container {
-            transform: translateX(0);
-        }
+    /* Ações de transformação baseadas no estado do input */
+    #prev:checked ~ .video-carrossel .video-container {
+        transform: translateX(0);
+    }
 
-        #next:checked ~ .video-carrossel .video-container {
-            transform: translateX(-100%);
-        }
+    #next:checked ~ .video-carrossel .video-container {
+        transform: translateX(-50%); /* Mover para o segundo vídeo */
+    }
 
     </style>
 </head>
@@ -217,37 +213,25 @@
             </nav>
 
             <div class="video-carrossel">
-                <!-- Contêiner dos vídeos -->
                 <div class="video-container">
-                    <!-- Vídeo 1 -->
                     <video controls>
                         <source src="videos/Raijin - Seguidor de Linha - IRONCup 2024.mp4" type="video/mp4">
                         <source src="videos/video_exemplo1.webm" type="video/webm">
                         Seu navegador não suporta a tag de vídeo.
                     </video>
-                    <!-- Vídeo 2 -->
                     <video controls>
                         <source src="videos/Robô Mini Sumo.mp4" type="video/mp4">
                         <source src="videos/video_exemplo2.webm" type="video/webm">
                         Seu navegador não suporta a tag de vídeo.
                     </video>
-                    <!-- Vídeo 3 -->
-                    <video controls>
-                        <source src="videos/video_exemplo3.mp4" type="video/mp4">
-                        <source src="videos/video_exemplo3.webm" type="video/webm">
-                        Seu navegador não suporta a tag de vídeo.
-                    </video>
                 </div>
-        
-                <!-- Controles de navegação -->
+            
                 <div class="controls">
-                    <!-- Botão de navegação anterior -->
                     <label class="prev" for="prev">&#10094;</label>
-                    <!-- Botão de navegação próximo -->
                     <label class="next" for="next">&#10095;</label>
                 </div>
-        
-                <!-- Inputs invisíveis (controle de navegação) -->
+            
+                <!-- Inputs invisíveis para controle -->
                 <input type="radio" id="prev" name="video-control">
                 <input type="radio" id="next" name="video-control">
             </div>
@@ -274,8 +258,6 @@
         <a href="https://www.instagram.com/" target="https://www.instagram.com/">
             <div class="image-container">
                 <img src="img/instalogo (2).png" alt="InstagramLogo" width="50">
-                <img src="img/linktrree (1).png" alt="linktree" width="50">
-                <img src="img/gmaillogo (1).png" alt="E-mail" width="50">
             </div>
         </a>
         <a href="linktr.ee/admin/appearance" target="https://www.instagram.com/">
