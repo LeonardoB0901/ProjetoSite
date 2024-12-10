@@ -6,7 +6,7 @@
     <title>Bondebot</title>
     <style>
         body {
-            background-color: #242323;
+            background-color: #242323; /* Cor de fundo para o corpo do site */
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -21,10 +21,10 @@
 
         .nav-bar {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-between; /* Distribui o logo e o menu */
             align-items: center;
             max-width: 1200px;
-            margin: 0 auto;
+            margin: 0 auto; /* Centraliza o conteúdo */
         }
 
         .logo img {
@@ -32,18 +32,23 @@
         }
 
         .nav-list {
-            flex: 1;
+            flex: 1; /* Faz o nav-list ocupar o espaço restante */
             display: flex;
-            justify-content: center;
+            justify-content: center; /* Centraliza os itens dentro do contêiner */
         }
 
         .nav-list ul {
             display: flex;
-            justify-content: center;
+            justify-content: center; /* Centraliza os itens horizontalmente */
             gap: 15px;
             margin: 0;
             padding: 0;
             list-style: none;
+        }
+
+        /* Estilo para os itens da lista (links) */
+        .nav-item {
+            position: relative;
         }
 
         .nav-item a {
@@ -54,6 +59,7 @@
             display: block;
         }
 
+        /* Barra de animação nos itens da lista */
         .nav-item a::after {
             content: '';
             position: absolute;
@@ -62,13 +68,14 @@
             width: 100%;
             height: 3px;
             background-color: #467f6b;
-            transform: scaleX(0);
+            transform: scaleX(0); /* Começa invisível */
             transform-origin: bottom right;
             transition: transform 0.3s ease-out;
         }
 
+        /* Efeito quando o cursor passa sobre o item */
         .nav-item a:hover::after {
-            transform: scaleX(1);
+            transform: scaleX(1); /* Faz a barra aparecer */
             transform-origin: bottom left;
         }
 
@@ -81,6 +88,7 @@
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
             border-radius: 50px;
+            
         }
 
         .principal {
@@ -97,42 +105,19 @@
         }
 
         .image-text-container {
-            display: flex;
-            align-items: center;
-            cursor: pointer;
+            display: flex; /* Usa flexbox para colocar a imagem e o texto lado a lado */
+            align-items: center; /* Alinha a imagem e o texto verticalmente */
+            cursor: pointer; /* Adiciona um cursor de clique ao passar o mouse */
         }
 
+        /* Estilo da imagem */
         .image-text-container img {
-            width: 150px;
-            height: auto;
-            margin-right: 20px;
+            width: 150px; /* Defina o tamanho da imagem conforme necessário */
+            height: auto; /* A altura é ajustada automaticamente para manter a proporção */
+            margin-right: 20px; /* Espaçamento entre a imagem e o texto */
         }
-
         p {
             color: rgb(255, 255, 255);
-        }
-
-        /* Estilo para o conteúdo oculto */
-        .content-hidden {
-            display: none;
-        }
-
-        /* Estilo para mostrar o conteúdo quando o checkbox estiver marcado */
-        input[type="checkbox"]:checked + .content-hidden {
-            display: block;
-        }
-        
-        /* Estilo para o rótulo (a área que o usuário clica para revelar o conteúdo) */
-        label {
-            display: block;
-            cursor: pointer;
-            color: #4ecfa2;
-            font-size: 18px;
-            padding: 10px;
-            margin-top: 10px;
-            background-color: #333;
-            border-radius: 5px;
-            width: fit-content;
         }
     </style>
 </head>
@@ -144,71 +129,59 @@
             </div>
             <div class="nav-list">
                 <ul>
-                    <li class="nav-item"><a href="#" class="nav-link">Participantes</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Modalidades</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Objetivos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" type="pointer">Participantes</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" type="pointer">Modalidades</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" type="pointer">Objetivos</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-
     <article>
         <footer>
-            <nav class="nav-bar">
-                <h1 class="objetivo">OBJETIVOS</h1>
-            </nav>
+        <nav class="nav-bar">
+            <h1 class="objetivo">OBJETIVOS</h1>
+        </nav>
         </footer>
-
-        <label for="reveal-objetivos">Mostrar Objetivos do Curso</label>
-        <input type="checkbox" id="reveal-objetivos">
-        <div class="content-hidden">
             <p class="principal">OBJETIVOS DO CURSO:</p>
             <p>Este Projeto tem como objetivo a divulgação da ciência, da tecnologia e a inovação por meio da realização e participação de alunos nas competições de <br> robótica promovidas pelo IFPR, as Olimpíadas de Robótica do IFPR. Os alunos inscritos ganharão um KIT de robótica no início do ano e serão avaliados semanalmente, para avaliar o progresso e evolução dos robôs.</p>
-        </div>
-
-        <footer>
-            <nav class="nav-bar">
-                <h1 class="objetivo">MODALIDADES</h1>
-            </nav>
-        </footer>
-        
-        <label for="reveal-modalidades">Mostrar Condiçoes</label>
-        <input type="checkbox" id="reveal-modalidades">
-        <div class="content-hidden">
+            <br>
+            <br>
+            <br>
             <p class="principal">CONDIÇÕES DO CURSO:</p>
             <p>Durante o projeto, os alunos que participantes deverão se apresentar semanalmente para os coordenadores do curso, para avaliarem o andamento dos robôs. Alunos que não apresentarem pouca/nenhuma <br> evolução serão desligados do curso e os Kits terão que ser devolvidos. Participe somente se tiver certeza que irá sacrificar tempo e paciência na confecção dos robôs.</p>
-        </div>
-        
+    
+
+    <!-- Segundo footer, com mesma estilização -->
         <footer>
             <nav class="nav-bar">
                 <h1 class="objetivo">MODALIDADES</h1>
             </nav>
         </footer>
-        
-        <label for="reveal-modalidades">Mostrar Modalidades</label>
-        <input type="checkbox" id="reveal-modalidades">
-        <div class="content-hidden">
-            <p class="principal">SUMÔ:</p>
-            <p>As competições de robôs no estilo sumô unem tecnologia e estratégia, com regras que garantem um equilíbrio justo entre os competidores. Os robôs são divididos em duas categorias de peso: Mini Sumô <br> (até 500 g) e Sumô (até 1 kg), assegurando que os robôs mais leves ou mais pesados não tenham vantagens.
-                Os robôs são autônomos e programados previamente, competindo sem intervenção humana. <br> Isso significa que eles devem se mover e reagir sozinhos, baseando-se na programação feita pelos competidores, tornando a inteligência artificial e a lógica de programação essenciais para a vitória.
-                Cada partida ocorre entre dois robôs, e o formato é "melhor de três", onde o primeiro robô a vencer dois rounds se torna o campeão da partida. Cada round dura até três minutos, exigindo que os robôs sejam rápidos e eficientes.
-            </p>
-            
-        </div>
-
+        <p class="principal">SUMÔ:</p>
+        <p>As competições de robôs no estilo sumô unem tecnologia e estratégia, com regras que garantem um equilíbrio justo entre os competidores. Os robôs são divididos em duas categorias de peso: Mini Sumô <br> (até 500 g) e Sumô (até 1 kg), assegurando que os robôs mais leves ou mais pesados não tenham vantagens.
+            Os robôs são autônomos e programados previamente, competindo sem intervenção humana. <br> Isso significa que eles devem se mover e reagir sozinhos, baseando-se na programação feita pelos competidores, tornando a inteligência artificial e a lógica de programação essenciais para a vitória.
+            Cada partida ocorre entre dois robôs, e o formato é "melhor de três", onde o primeiro robô a vencer dois rounds se torna o campeão da partida. Cada round dura até três minutos, exigindo que os robôs sejam rápidos e eficientes.
+        </p>
+        <p class="principal">SEGUIDOR DE LINHA:</p>
+        <p>O robô seguidor de linha é um tipo de robô autônomo que segue uma trajetória específica, normalmente marcada por uma linha de cor contrastante, como uma faixa preta em um fundo branco. Esse robô utiliza <br> sensores, geralmente infravermelhos ou fotossensores, para detectar a linha e reconhecer desvios na trajetória, ajustando sua direção conforme necessário.  A programação é essencial para o funcionamento,<br> permitindo que o robô ajuste a velocidade e contorne curvas de forma eficiente.</p>
         <footer>
-            <nav class="nav-bar">
-                <h1 class="objetivo">PARTICIPANTES</h1>
-            </nav>
+        <nav class="nav-bar">
+            <h1 class="objetivo">PARTICIPANTES</h1>
+        </nav>
         </footer>
+        <p class="principal">COORDENADOR:</p>
+        <p>. Prof. Túlio: Professor e Coordenador do Projeto BondeBot e Automatiza, responsável por auxiliar os alunos no Pavilhão (Região para as aulas de automação e mecânica), onde coordena na confecção e programação dos robôs. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="principal">INTEGRANTES DO PROJETO:</p>
+        <p>adnajfdakfkafjpqnfqkfiqkfqlnfqlfqkfqpkfqkkfqonfqofkkqmfpqmf</p>
 
-        <label for="reveal-participantes">Mostrar Participantes</label>
-        <input type="checkbox" id="reveal-participantes">
-        <div class="content-hidden">
-            <p class="principal">COORDENADOR:</p>
-            <p>. Prof. Túlio: Professor e Coordenador do Projeto BondeBot e Automatiza, responsável por auxiliar os alunos no Pavilhão (Região para as aulas de automação e mecânica), onde coordena na confecção e programação dos robôs. 
-            </p>
-        </div>
+        <a href="https://www.instagram.com/" target="https://www.instagram.com/">
+            <div class="image-container">
+                <img src="img/instalogo (2).png" alt="InstagramLogo" width="50">
+                <img src="img/linktrree (1).png" alt="linktree" width="50">
+                <img src="img/gmaillogo (1).png" alt="E-mail" width="50">
+            </div>
+        </a>
     </article>
 </body>
 </html>
