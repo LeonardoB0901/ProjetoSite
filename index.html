@@ -120,59 +120,64 @@
             color: rgb(255, 255, 255);
         }
 
-    /* Estilo da navegação do carrossel */
-    .video-carrossel {
-        width: 80%;
-        max-width: 800px;
-        margin: 20px auto;
-        overflow: hidden;
-        position: relative;
-    }
+        /* Estilo do contêiner do carrossel */
+        .video-carrossel {
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+            overflow: hidden;
+            position: relative;
+        }
 
-    .video-container {
-        display: flex;
-        transition: transform 0.5s ease-in-out;
-        width: 200%; /* Contêiner maior para comportar os dois vídeos */
-    }
+        /* Contêiner dos vídeos */
+        .video-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out; /* Transição suave */
+            width: 200%; /* O contêiner tem o dobro da largura para conter os dois vídeos */
+        }
 
-    .video-container video {
-        width: 50%; /* Cada vídeo ocupa metade da largura */
-        flex-shrink: 0;
-        border-radius: 10px;
-    }
+        /* Cada vídeo dentro do carrossel */
+        .video-container video {
+            width: 50%; /* Cada vídeo ocupa 50% da largura do carrossel */
+            flex-shrink: 0;
+            border-radius: 10px;
+        }
 
-    /* Estilos para os botões de navegação */
-    .controls {
-        position: absolute;
-        top: 50%;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        transform: translateY(-50%);
-        z-index: 10;
-    }
+        /* Estilo dos botões de navegação */
+        .controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+            z-index: 10;
+        }
 
-    .prev, .next {
-        background-color: rgba(0, 0, 0, 0.5);
-        color: #fff;
-        border: none;
-        padding: 10px;
-        font-size: 18px;
-        cursor: pointer;
-    }
+        /* Botões de navegação */
+        .prev, .next {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border: none;
+            padding: 10px;
+            font-size: 18px;
+            cursor: pointer;
+        }
 
-    input[type="radio"] {
-        display: none;
-    }
+        /* Escondendo os inputs de rádio */
+        input[type="radio"] {
+            display: none;
+        }
 
-    /* Ações de transformação baseadas no estado do input */
-    #prev:checked ~ .video-carrossel .video-container {
-        transform: translateX(0);
-    }
+        /* Ações baseadas nos inputs de rádio */
+        #prev:checked ~ .video-carrossel .video-container {
+            transform: translateX(0); /* Primeiro vídeo */
+        }
 
-    #next:checked ~ .video-carrossel .video-container {
-        transform: translateX(-50%); /* Mover para o segundo vídeo */
-    }
+        #next:checked ~ .video-carrossel .video-container {
+            transform: translateX(-50%); /* Segundo vídeo */
+        }
+
 
     </style>
 </head>
@@ -211,31 +216,31 @@
             <nav class="nav-bar">
                 <h1 class="objetivo">MODALIDADES</h1>
             </nav>
-
             <div class="video-carrossel">
+                <!-- Contêiner de vídeos -->
                 <div class="video-container">
+                    <!-- Vídeo 1 -->
                     <video controls>
                         <source src="videos/Raijin - Seguidor de Linha - IRONCup 2024.mp4" type="video/mp4">
-                        <source src="videos/video_exemplo1.webm" type="video/webm">
                         Seu navegador não suporta a tag de vídeo.
                     </video>
+                    <!-- Vídeo 2 -->
                     <video controls>
                         <source src="videos/Robô Mini Sumo.mp4" type="video/mp4">
-                        <source src="videos/video_exemplo2.webm" type="video/webm">
                         Seu navegador não suporta a tag de vídeo.
                     </video>
                 </div>
-            
+        
+                <!-- Controles de navegação -->
                 <div class="controls">
                     <label class="prev" for="prev">&#10094;</label>
                     <label class="next" for="next">&#10095;</label>
                 </div>
-            
-                <!-- Inputs invisíveis para controle -->
+        
+                <!-- Inputs invisíveis para controlar o carrossel -->
                 <input type="radio" id="prev" name="video-control">
                 <input type="radio" id="next" name="video-control">
             </div>
-
         </footer>
         <p class="principal">SUMÔ:</p>
         <p>As competições de robôs no estilo sumô unem tecnologia e estratégia, com regras que garantem um equilíbrio justo entre os competidores. Os robôs são divididos em duas categorias de peso: Mini Sumô <br> (até 500 g) e Sumô (até 1 kg), assegurando que os robôs mais leves ou mais pesados não tenham vantagens.
