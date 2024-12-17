@@ -377,7 +377,7 @@ const nextButton = document.querySelector('.next');
 
 // Variável para controlar a posição atual do carrossel
 let currentIndex = 0;
-const totalImages = document.querySelectorAll('.image-container img').length;
+const totalImages = document.querySelectorAll('.image-container img').length; // Quantidade de imagens
 
 // Função para atualizar a posição do carrossel
 function updateCarousel() {
@@ -387,13 +387,13 @@ function updateCarousel() {
 
 // Função para navegar para a imagem anterior
 prevButton.addEventListener('click', () => {
-    currentIndex = (currentIndex === 0) ? totalImages - 1 : currentIndex - 1;
+    currentIndex = (currentIndex === 0) ? totalImages - 1 : currentIndex - 1; // Se estiver na primeira imagem, vai para a última
     updateCarousel();
 });
 
 // Função para navegar para a próxima imagem
 nextButton.addEventListener('click', () => {
-    currentIndex = (currentIndex === totalImages - 1) ? 0 : currentIndex + 1;
+    currentIndex = (currentIndex === totalImages - 1) ? 0 : currentIndex + 1; // Se estiver na última imagem, volta para a primeira
     updateCarousel();
 });
         </script>
