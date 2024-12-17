@@ -123,7 +123,7 @@
         p {
             color: rgb(255, 255, 255);
         }
-  /* Estilo do contêiner do carrossel */
+
   .video-carrossel {
             width: 80%;
             max-width: 800px;
@@ -157,7 +157,6 @@
             z-index: 10;
         }
 
-        /* Botões de navegação */
         .prev, .next {
             background-color: rgba(0, 0, 0, 0.5);
             color: #fff;
@@ -167,6 +166,44 @@
             cursor: pointer;
         }
 
+        .image-carrossel {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 500%; /* O contêiner tem 500% da largura, pois temos 5 imagens */
+}
+
+.image-container img {
+    width: 20%; /* Cada imagem ocupa 20% da largura do carrossel */
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+.controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.prev, .next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
     </style>
 </head>
 <body>
@@ -317,6 +354,44 @@
             <h1 class="objetivo">PARTICIPANTES</h1>
         </nav>
         </footer>
+        <div class="image-carrossel">
+            <!-- Contêiner de imagens -->
+            <div class="image-container">
+                <img src="img/robo1.PNG" alt="Imagem 1">
+                <img src="img/robo2.PNG" alt="Imagem 2">
+                <img src="img/robo3.PNG" alt="Imagem 3">
+                <img src="img/arduino4.PNG" alt="Imagem 4">
+                <img src="img/robo5.PNG" alt="Imagem 5">
+            </div>
+        
+            <div class="controls">
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+        </div>
+        <script>
+            const imageContainer = document.querySelector('.image-container');
+            const prevButton = document.querySelector('.prev');
+            const nextButton = document.querySelector('.next');
+            let currentIndex = 0;
+            const totalImages = imageContainer.children.length;
+            function updateCarousel() {
+            const offset = -currentIndex * 20;
+            imageContainer.style.transform = `translateX(${offset}%)`;
+}
+
+// Função para navegar para a imagem anterior
+prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex === 0) ? totalImages - 1 : currentIndex - 1;
+    updateCarousel();
+});
+
+// Função para navegar para a próxima imagem
+nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex === totalImages - 1) ? 0 : currentIndex + 1;
+    updateCarousel();
+});
+        </script>
         <section id="participantes">
         <p class="principal">COORDENADOR</p>
         <p>Prof. Túlio: Professor e Coordenador do Projeto BondeBot e Automatiza, responsável por auxiliar os alunos no Pavilhão (Região para as aulas de automação e mecânica), onde coordena na confecção e programação dos robôs. 
