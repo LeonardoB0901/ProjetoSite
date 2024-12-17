@@ -205,7 +205,7 @@
                 <div class="video-container">
                     <!-- Vídeo 1 -->
                     <video controls>
-                        <source src="videos/Raijin - Seguidor de Linha - IRONCup 2024.mp4" type="video/mp4">
+                        <source src="videos/3Kg Sumo Robot #1.mp4" type="video/mp4">
                         Seu navegador não suporta a tag de vídeo.
                     </video>
                     <!-- Vídeo 2 -->
@@ -256,8 +256,108 @@
             Os robôs são autônomos e programados previamente, competindo sem intervenção humana. <br> Isso significa que eles devem se mover e reagir sozinhos, baseando-se na programação feita pelos competidores, tornando a inteligência artificial e a lógica de programação essenciais para a vitória.
             Cada partida ocorre entre dois robôs, e o formato é "melhor de três", onde o primeiro robô a vencer dois rounds se torna o campeão da partida. Cada round dura até três minutos, exigindo que os robôs sejam rápidos e eficientes.
         </p>
+        <div class="video-carrossel">
+            <!-- Contêiner de vídeos -->
+            <div class="video-container">
+                <!-- Vídeo 1 -->
+                <video controls>
+                    <source src="videos/3Kg Sumo Robot #1.mp4" type="video/mp4">
+                    Seu navegador não suporta a tag de vídeo.
+                </video>
+                <!-- Vídeo 2 -->
+                <video controls>
+                    <source src="videos/Robô Mini Sumo.mp4" type="video/mp4">
+                    Seu navegador não suporta a tag de vídeo.
+                </video>
+            </div>
+    
+            <!-- Controles de navegação -->
+            <div class="controls">
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+        </div>
+    
+        <script>
+            // Seleciona o contêiner de vídeos e os botões
+            const videoContainer = document.querySelector('.video-container');
+            const prevButton = document.querySelector('.prev');
+            const nextButton = document.querySelector('.next');
+    
+            // Variável para controlar a posição atual do carrossel
+            let currentIndex = 0;
+            const totalVideos = videoContainer.children.length;
+    
+            // Função para atualizar a posição do carrossel
+            function updateCarousel() {
+                const offset = -currentIndex * 50; // Cada vídeo tem 50% da largura
+                videoContainer.style.transform = `translateX(${offset}%)`;
+            }
+    
+            // Função para navegar para o vídeo anterior
+            prevButton.addEventListener('click', () => {
+                currentIndex = (currentIndex === 0) ? totalVideos - 1 : currentIndex - 1;
+                updateCarousel();
+            });
+    
+            // Função para navegar para o próximo vídeo
+            nextButton.addEventListener('click', () => {
+                currentIndex = (currentIndex === totalVideos - 1) ? 0 : currentIndex + 1;
+                updateCarousel();
+            });
+        </script>
         <p class="principal">SEGUIDOR DE LINHA</p>
         <p>O robô seguidor de linha é um tipo de robô autônomo que segue uma trajetória específica, normalmente marcada por uma linha de cor contrastante, como uma faixa preta em um fundo branco. Esse robô utiliza <br> sensores, geralmente infravermelhos ou fotossensores, para detectar a linha e reconhecer desvios na trajetória, ajustando sua direção conforme necessário.  A programação é essencial para o funcionamento,<br> permitindo que o robô ajuste a velocidade e contorne curvas de forma eficiente.</p>
+        <div class="video-carrossel">
+            <!-- Contêiner de vídeos -->
+            <div class="video-container">
+                <!-- Vídeo 1 -->
+                <video controls>
+                    <source src="videos/HBFS Line Follower - Next Generation of Robots.mp4" type="video/mp4">
+                    Seu navegador não suporta a tag de vídeo.
+                </video>
+                <!-- Vídeo 2 -->
+                <video controls>
+                    <source src="videos/HBFS Line Follower Turbo - Rooftop Edition.mp4" type="video/mp4">
+                    Seu navegador não suporta a tag de vídeo.
+                </video>
+            </div>
+    
+            <!-- Controles de navegação -->
+            <div class="controls">
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+        </div>
+    
+        <script>
+            // Seleciona o contêiner de vídeos e os botões
+            const videoContainer = document.querySelector('.video-container');
+            const prevButton = document.querySelector('.prev');
+            const nextButton = document.querySelector('.next');
+    
+            // Variável para controlar a posição atual do carrossel
+            let currentIndex = 0;
+            const totalVideos = videoContainer.children.length;
+    
+            // Função para atualizar a posição do carrossel
+            function updateCarousel() {
+                const offset = -currentIndex * 50; // Cada vídeo tem 50% da largura
+                videoContainer.style.transform = `translateX(${offset}%)`;
+            }
+    
+            // Função para navegar para o vídeo anterior
+            prevButton.addEventListener('click', () => {
+                currentIndex = (currentIndex === 0) ? totalVideos - 1 : currentIndex - 1;
+                updateCarousel();
+            });
+    
+            // Função para navegar para o próximo vídeo
+            nextButton.addEventListener('click', () => {
+                currentIndex = (currentIndex === totalVideos - 1) ? 0 : currentIndex + 1;
+                updateCarousel();
+            });
+        </script>
         <footer>
         <nav class="nav-bar">
             <h1 class="objetivo">PARTICIPANTES</h1>
