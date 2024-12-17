@@ -268,35 +268,6 @@
                 <button class="next">&#10095;</button>
             </div>
         </div>
-    
-        <script>
-            // Seleciona o contêiner de vídeos e os botões
-            const videoContainer = document.querySelector('.video-container');
-            const prevButton = document.querySelector('.prev');
-            const nextButton = document.querySelector('.next');
-    
-            // Variável para controlar a posição atual do carrossel
-            let currentIndex = 0;
-            const totalVideos = videoContainer.children.length;
-    
-            // Função para atualizar a posição do carrossel
-            function updateCarousel() {
-                const offset = -currentIndex * 50; // Cada vídeo tem 50% da largura
-                videoContainer.style.transform = `translateX(${offset}%)`;
-            }
-    
-            // Função para navegar para o vídeo anterior
-            prevButton.addEventListener('click', () => {
-                currentIndex = (currentIndex === 0) ? totalVideos - 1 : currentIndex - 1;
-                updateCarousel();
-            });
-    
-            // Função para navegar para o próximo vídeo
-            nextButton.addEventListener('click', () => {
-                currentIndex = (currentIndex === totalVideos - 1) ? 0 : currentIndex + 1;
-                updateCarousel();
-            });
-        </script>
         <p class="principal">SEGUIDOR DE LINHA</p>
         <p>O robô seguidor de linha é um tipo de robô autônomo que segue uma trajetória específica, normalmente marcada por uma linha de cor contrastante, como uma faixa preta em um fundo branco. Esse robô utiliza <br> sensores, geralmente infravermelhos ou fotossensores, para detectar a linha e reconhecer desvios na trajetória, ajustando sua direção conforme necessário.  A programação é essencial para o funcionamento,<br> permitindo que o robô ajuste a velocidade e contorne curvas de forma eficiente.</p>
         <div class="video-carrossel">
@@ -320,35 +291,6 @@
                 <button class="next">&#10095;</button>
             </div>
         </div>
-    
-        <script>
-            // Seleciona o contêiner de vídeos e os botões
-            const videoContainer = document.querySelector('.video-container');
-            const prevButton = document.querySelector('.prev');
-            const nextButton = document.querySelector('.next');
-    
-            // Variável para controlar a posição atual do carrossel
-            let currentIndex = 0;
-            const totalVideos = videoContainer.children.length;
-    
-            // Função para atualizar a posição do carrossel
-            function updateCarousel() {
-                const offset = -currentIndex * 50; // Cada vídeo tem 50% da largura
-                videoContainer.style.transform = `translateX(${offset}%)`;
-            }
-    
-            // Função para navegar para o vídeo anterior
-            prevButton.addEventListener('click', () => {
-                currentIndex = (currentIndex === 0) ? totalVideos - 1 : currentIndex - 1;
-                updateCarousel();
-            });
-    
-            // Função para navegar para o próximo vídeo
-            nextButton.addEventListener('click', () => {
-                currentIndex = (currentIndex === totalVideos - 1) ? 0 : currentIndex + 1;
-                updateCarousel();
-            });
-        </script>
         <footer>
         <nav class="nav-bar">
             <h1 class="objetivo">PARTICIPANTES</h1>
@@ -370,59 +312,55 @@
             </div>
         </div>
         <script>
+            // Carrossel de Vídeos
+            const videoContainer = document.querySelector('.video-container');
+            const prevButtonVideo = document.querySelector('.video-carrossel .prev');
+            const nextButtonVideo = document.querySelector('.video-carrossel .next');
+            let currentIndexVideo = 0;
+            const totalVideos = videoContainer.children.length;
+        
+            // Atualiza o carrossel de vídeos
+            function updateVideoCarousel() {
+                const offset = -currentIndexVideo * 50; // Cada vídeo ocupa 50% da largura
+                videoContainer.style.transform = `translateX(${offset}%)`;
+            }
+        
+            // Navega para o vídeo anterior
+            prevButtonVideo.addEventListener('click', () => {
+                currentIndexVideo = (currentIndexVideo === 0) ? totalVideos - 1 : currentIndexVideo - 1;
+                updateVideoCarousel();
+            });
+        
+            // Navega para o próximo vídeo
+            nextButtonVideo.addEventListener('click', () => {
+                currentIndexVideo = (currentIndexVideo === totalVideos - 1) ? 0 : currentIndexVideo + 1;
+                updateVideoCarousel();
+            });
+        
             // Carrossel de Imagens
-const imageContainer = document.querySelector('.image-container');
-const prevButtonImages = document.querySelector('.image-carrossel .prev');
-const nextButtonImages = document.querySelector('.image-carrossel .next');
-
-// Variável para controlar a posição atual do carrossel de imagens
-let currentImageIndex = 0;
-const totalImages = document.querySelectorAll('.image-container img').length;
-
-// Função para atualizar a posição do carrossel de imagens
-function updateImageCarousel() {
-    const offset = -currentImageIndex * 20; // Cada imagem ocupa 20% da largura
-    imageContainer.style.transform = `translateX(${offset}%)`;
-}
-
-// Função para navegar para a imagem anterior
-prevButtonImages.addEventListener('click', () => {
-    currentImageIndex = (currentImageIndex === 0) ? totalImages - 1 : currentImageIndex - 1;
-    updateImageCarousel();
-});
-
-// Função para navegar para a próxima imagem
-nextButtonImages.addEventListener('click', () => {
-    currentImageIndex = (currentImageIndex === totalImages - 1) ? 0 : currentImageIndex + 1;
-    updateImageCarousel();
-});
-
-// Carrossel de Vídeos
-const videoContainer = document.querySelector('.video-container');
-const prevButtonVideos = document.querySelector('.video-carrossel .prev');
-const nextButtonVideos = document.querySelector('.video-carrossel .next');
-
-// Variável para controlar a posição atual do carrossel de vídeos
-let currentVideoIndex = 0;
-const totalVideos = videoContainer.children.length;
-
-// Função para atualizar a posição do carrossel de vídeos
-function updateVideoCarousel() {
-    const offset = -currentVideoIndex * 50; // Cada vídeo ocupa 50% da largura
-    videoContainer.style.transform = `translateX(${offset}%)`;
-}
-
-// Função para navegar para o vídeo anterior
-prevButtonVideos.addEventListener('click', () => {
-    currentVideoIndex = (currentVideoIndex === 0) ? totalVideos - 1 : currentVideoIndex - 1;
-    updateVideoCarousel();
-});
-
-// Função para navegar para o próximo vídeo
-nextButtonVideos.addEventListener('click', () => {
-    currentVideoIndex = (currentVideoIndex === totalVideos - 1) ? 0 : currentVideoIndex + 1;
-    updateVideoCarousel();
-});
+            const imageContainer = document.querySelector('.image-container');
+            const prevButtonImage = document.querySelector('.image-carrossel .prev');
+            const nextButtonImage = document.querySelector('.image-carrossel .next');
+            let currentIndexImage = 0;
+            const totalImages = document.querySelectorAll('.image-container img').length;
+        
+            // Atualiza o carrossel de imagens
+            function updateImageCarousel() {
+                const offset = -currentIndexImage * 20; // Cada imagem ocupa 20% da largura
+                imageContainer.style.transform = `translateX(${offset}%)`;
+            }
+        
+            // Navega para a imagem anterior
+            prevButtonImage.addEventListener('click', () => {
+                currentIndexImage = (currentIndexImage === 0) ? totalImages - 1 : currentIndexImage - 1;
+                updateImageCarousel();
+            });
+        
+            // Navega para a próxima imagem
+            nextButtonImage.addEventListener('click', () => {
+                currentIndexImage = (currentIndexImage === totalImages - 1) ? 0 : currentIndexImage + 1;
+                updateImageCarousel();
+            });
         </script>
         <section id="participantes">
         <p class="principal">COORDENADOR</p>
