@@ -370,31 +370,58 @@
             </div>
         </div>
         <script>
-            // Seleciona o contêiner de imagens e os botões
+            // Carrossel de Imagens
 const imageContainer = document.querySelector('.image-container');
-const prevButton = document.querySelector('.prev');
-const nextButton = document.querySelector('.next');
+const prevButtonImages = document.querySelector('.image-carrossel .prev');
+const nextButtonImages = document.querySelector('.image-carrossel .next');
 
-// Variável para controlar a posição atual do carrossel
-let currentIndex = 0;
-const totalImages = document.querySelectorAll('.image-container img').length; // Quantidade de imagens
+// Variável para controlar a posição atual do carrossel de imagens
+let currentImageIndex = 0;
+const totalImages = document.querySelectorAll('.image-container img').length;
 
-// Função para atualizar a posição do carrossel
-function updateCarousel() {
-    const offset = -currentIndex * 20; // Cada imagem tem 20% da largura
+// Função para atualizar a posição do carrossel de imagens
+function updateImageCarousel() {
+    const offset = -currentImageIndex * 20; // Cada imagem ocupa 20% da largura
     imageContainer.style.transform = `translateX(${offset}%)`;
 }
 
 // Função para navegar para a imagem anterior
-prevButton.addEventListener('click', () => {
-    currentIndex = (currentIndex === 0) ? totalImages - 1 : currentIndex - 1; // Se estiver na primeira imagem, vai para a última
-    updateCarousel();
+prevButtonImages.addEventListener('click', () => {
+    currentImageIndex = (currentImageIndex === 0) ? totalImages - 1 : currentImageIndex - 1;
+    updateImageCarousel();
 });
 
 // Função para navegar para a próxima imagem
-nextButton.addEventListener('click', () => {
-    currentIndex = (currentIndex === totalImages - 1) ? 0 : currentIndex + 1; // Se estiver na última imagem, volta para a primeira
-    updateCarousel();
+nextButtonImages.addEventListener('click', () => {
+    currentImageIndex = (currentImageIndex === totalImages - 1) ? 0 : currentImageIndex + 1;
+    updateImageCarousel();
+});
+
+// Carrossel de Vídeos
+const videoContainer = document.querySelector('.video-container');
+const prevButtonVideos = document.querySelector('.video-carrossel .prev');
+const nextButtonVideos = document.querySelector('.video-carrossel .next');
+
+// Variável para controlar a posição atual do carrossel de vídeos
+let currentVideoIndex = 0;
+const totalVideos = videoContainer.children.length;
+
+// Função para atualizar a posição do carrossel de vídeos
+function updateVideoCarousel() {
+    const offset = -currentVideoIndex * 50; // Cada vídeo ocupa 50% da largura
+    videoContainer.style.transform = `translateX(${offset}%)`;
+}
+
+// Função para navegar para o vídeo anterior
+prevButtonVideos.addEventListener('click', () => {
+    currentVideoIndex = (currentVideoIndex === 0) ? totalVideos - 1 : currentVideoIndex - 1;
+    updateVideoCarousel();
+});
+
+// Função para navegar para o próximo vídeo
+nextButtonVideos.addEventListener('click', () => {
+    currentVideoIndex = (currentVideoIndex === totalVideos - 1) ? 0 : currentVideoIndex + 1;
+    updateVideoCarousel();
 });
         </script>
         <section id="participantes">
